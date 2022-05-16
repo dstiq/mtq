@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+}
+.container > div {
+    padding: 10px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+.graphic_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#graphic_canvas {
+    border: 1px solid black;
+}
+
+.container div * {
+    margin: 5px;
+}

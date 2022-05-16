@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<main>
+    <h4>Архив метеослужбы</h4>
+    <div class="container">
+        <div class="buttons">
+            <button id="button_temperature">Температура</button>
+            <button id="button_precipitation">Осадки</button>
+        </div>
+        <div class="graphic_container">
+            <div class="graphic_filter">
+
+                <label for="graphic_filter-from"> год от</label>
+                <select id="graphic_filter-from"></select>
+
+                <label for="graphic_filter-to"> год по</label>
+                <select id="graphic_filter-to"></select>
+            </div>
+            <div id="graphic_canvas_container">
+                <canvas width="800" height="600" id="graphic_canvas"/>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+<script type="module" src="./src/graphic.js" defer></script>
+<script type="module" src="./src/utils/db/index.js" defer></script>
+<script type="module" src="./src/utils/db/precipitation.js" defer></script>
+<script type="module" src="./src/utils/db/temperature.js" defer></script>
+<script type="module" src="./src/api.js" defer></script>
+<script type="module" src="./src/data.js" defer></script>
+<script type="module" src="./index.js" defer></script>
+</html>
